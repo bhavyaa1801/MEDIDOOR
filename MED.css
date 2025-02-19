@@ -1,0 +1,151 @@
+*{
+    padding: 0px;
+    margin: 0px;
+   }
+   
+   .navbar{
+       height: 250px;
+       background-color: #3D8D7A;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height:55px;
+       font-size: 1.2rem;
+   
+   }
+   .T{
+       font-size: 1.5rem;
+       font-weight: bold;
+   }
+   .profile{
+       margin-left: 200px;
+       
+   }
+   .profile:hover{
+       text-decoration: underline;
+       cursor: pointer;
+   }
+   a{
+       color: black;
+       text-decoration: none;
+   }
+   .logoo{
+       margin-right: 500px;
+   }
+   .logoo:hover{
+       cursor: no-drop;
+   }
+   
+   .signl{
+       display: flex;
+       margin:35px;
+   }
+   .signl:hover{
+       text-decoration: underline;
+       cursor: pointer;
+   }
+   .login{
+       margin:35px;
+   }
+   .login:hover{
+       text-decoration: underline;
+       cursor: pointer;
+   }
+   .cart{
+       margin:35px;
+   }
+   .cart:hover{
+       text-decoration: underline;
+       cursor: pointer;
+   }
+   .Bodyy{
+       background-color: #FBFFE4;
+   }
+   .searchele{
+       height: 60px;
+       background-color: #B3D8A8;
+   
+   }
+   .details{
+       background: linear-gradient(#204582,#374151,#27667B);
+       height: 800px;
+       
+       padding-top: 25px;
+   }
+   .getm{
+       font-size: 2.5rem;
+       font-family: cursive;
+       font-weight: bolder;
+       color:whitesmoke;
+       display: flex;
+       justify-content: center;
+       margin-top: 20px;
+       margin-bottom: 18px;
+   }
+   .ele{
+       display: flex;
+      justify-content: center;
+       
+   }
+   .ele2{
+       display: flex;
+      justify-content: center;
+   }
+   .reminder{
+       height: 200px;
+       width: 300px;
+       background-color: #3D8D7A;
+       margin: 10px;
+       border-radius: 20px;
+       padding: 20px;
+   }
+   .checkfam{
+       height: 200px;
+       width: 300px;
+       background-color: #3D8D7A;
+       margin: 10px;
+       border-radius: 20px;
+       padding: 20px;
+   }
+   .ai{
+       height: 200px;
+       width: 300px;
+       background-color: #3D8D7A;
+       margin: 10px;
+       border-radius: 20px;
+       padding: 20px;
+   
+   }
+   .order{
+       height: 200px;
+       width: 300px;
+       background-color: #3D8D7A;
+       margin: 10px;
+       border-radius: 20px;
+       padding: 20px;
+   }
+   .buymed{
+       height: 200px;
+       width: 300px;
+       background-color: #3D8D7A;
+       margin: 10px;
+       border-radius: 20px;
+       padding: 20px;
+   }
+   .appoint{
+       height: 200px;
+       width: 300px;
+       background-color: #3D8D7A;
+       margin: 10px;
+       border-radius: 20px;
+       padding: 20px;
+   }
+   .foot{
+     
+       height: 300px;
+       background-color: black;
+       position:sticky;
+       margin-top: 0px;
+       
+   
+   }

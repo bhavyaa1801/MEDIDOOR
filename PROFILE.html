@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2c3031;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .profile-container {
+            width: 60%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .profile-header {
+            position: relative;
+        }
+        .profile-header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #1E3A5F;
+        }
+        .edit-btn {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background: #1E3A5F;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .tab {
+            cursor: pointer;
+            padding: 10px;
+            border-bottom: 2px solid transparent;
+        }
+        .tab.active {
+            border-bottom: 2px solid #1E3A5F;
+            font-weight: bold;
+        }
+        .tab-content {
+            display: none;
+            margin-top: 20px;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <button class="edit-btn">Edit Profile</button>
+            <img src="https://via.placeholder.com/100" alt="User Profile">
+            <h2>USERNAME</h2>
+            <p>USER@example.com</p>
+        </div>
+        <div class="tabs">
+            <div class="tab active" onclick="showTab('orders')">Orders</div>
+            <div class="tab" onclick="showTab('appointments')">Appointments</div>
+            <div class="tab" onclick="showTab('family')">Family Monitoring</div>
+        </div>
+        <div id="orders" class="tab-content active">
+            <p>Order history will be displayed here.</p>
+        </div>
+        <div id="appointments" class="tab-content">
+            <p>Appointment details will be displayed here.</p>
+        </div>
+        <div id="family" class="tab-content">
+            <p>Family monitoring details will be displayed here.</p>
+        </div>
+    </div>
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            document.querySelector(`[onclick="showTab('${tabId}')"]`).classList.add('active');
+        }
+    </script>
+</body>
+</html>
